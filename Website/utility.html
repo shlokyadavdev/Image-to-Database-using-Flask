@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="utility_css.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style media="screen">
+    *{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-decoration: none;
+    }
+
+    .header{
+      width: 100%;
+      height: 30px;
+      display:block;
+      background: #5CDB95;
+      justify-content: center;
+      align-content: center;
+    }
+
+    .header ul a{
+      justify-content: flex-end;
+      text-align: center;
+      display: inline-block;
+      background-color: #5CDB95;
+      padding-right: 94px;
+      padding-left: 95px;
+      padding-top: 7px;
+      color: white;
+      font-weight: lighter;
+      font-size: 1.0em;
+    }
+
+    .header li{
+      background-color: #5CDB95;
+      font-weight: bold;
+    }
+
+    .body{
+      width: 900px;
+      height: 1800px;
+      position: absolute;
+      top: 10%;
+      left: 13%;
+      background: #EDF5E1;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    .head{
+      object-fit: cover;
+      height: 200px;
+      width: 1000px;
+      position: absolute;
+      left: 0%;
+    }
+
+    .slider{
+      width:100%;
+      height: 450px;
+      position: absolute;
+      left: 50%;
+      top: 22%;
+      transform: translate(-50%,-30%);
+      background-image: url('http://www.vit.edu/images/TRF/1.jpeg');
+      background-size: cover;
+      animation:slide 30s infinite ease;
+    }
+
+    @keyframes slide {
+      0%{background-image: url('http://www.vit.edu/images/TRF/1.jpeg');background-size: cover;}
+      33%{background-image: url('http://www.vit.edu/images/TRF/2.jpeg');background-size: cover;}
+      66%{background-image: url('http://www.vit.edu/images/Technical_chapter/DSC_5395.jpg');background-size: cover;}
+
+    }
+
+    .newsfeed{
+      font-size: 1.8em;
+      font-weight: lighter;
+      font-family: 'Alegreya Sans SC', sans-serif;
+      position: absolute;
+      top: 42%;
+      left: 3%;
+    }
+
+    .line{
+      border-top: 2px solid grey;
+      width: 310%;
+    }
+
+    .feed1{
+      padding-top: 100px;
+      position: absolute;
+      top: 150%;
+      left: 10%;
+      width: 290%;
+      height: 120px;
+      background-color: #379683;
+    }
+
+    .feed1 hr{
+      padding-left: 350px;
+      width: 50%;
+    }
+
+    .i1{
+      padding-top: 100px;
+      position: absolute;
+      top: -45.5%;
+      left: 0%;
+      height: 220px;
+      width: 220px;
+    }
+
+    .l1{
+      color: white;
+      position: absolute;
+      top: 8%;
+      left: 30%;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+
+    .l1:hover{
+      font-weight: bold;
+    }
+
+    .t1{
+      color: white;
+      position: absolute;
+      padding-right: 20px;
+      top: 49%;
+      left: 30%;
+      right: 10%;
+      font-weight: lighter;
+      font-family: 'Roboto', sans-serif;
+      font-size: 0.6em;
+    }
+
+    .feed2{
+      padding-top: 100px;
+      position: absolute;
+      top: 600%;
+      left: 10%;
+      width: 290%;
+      height: 120px;
+      background-color: #379669;
+    }
+
+    .feed2 hr{
+      padding-left: 350px;
+      width: 50%;
+    }
+
+    .i2{
+      padding-top: 100px;
+      position: absolute;
+      top: -45.5%;
+      left: 0%;
+      height: 220px;
+      width: 220px;
+    }
+
+    .l2{
+      color: white;
+      position: absolute;
+      top: 8%;
+      left: 30%;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+
+    .l2:hover{
+      font-weight: bold;
+    }
+
+    .t2{
+      color: white;
+      position: absolute;
+      padding-right: 20px;
+      top: 49%;
+      left: 30%;
+      right: 10%;
+      font-weight: lighter;
+      font-family: 'Roboto', sans-serif;
+      font-size: 0.6em;
+    }
+
+    .feed3{
+      padding-top: 100px;
+      position: absolute;
+      top: 1060%;
+      left: 10%;
+      width: 290%;
+      height: 120px;
+      background-color: #376969;
+    }
+
+    .feed3 hr{
+      padding-left: 350px;
+      width: 50%;
+    }
+
+    .i3{
+      padding-top: 100px;
+      position: absolute;
+      top: -45.5%;
+      left: 0%;
+      height: 220px;
+      width: 220px;
+    }
+
+    .l3{
+      color: white;
+      position: absolute;
+      top: 8%;
+      left: 30%;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+
+    .l3:hover{
+      font-weight: bold;
+    }
+
+    .t3{
+      color: white;
+      position: absolute;
+      padding-right: 20px;
+      top: 49%;
+      left: 30%;
+      right: 10%;
+      font-weight: lighter;
+      font-family: 'Roboto', sans-serif;
+      font-size: 0.6em;
+    }
+
+    .carnivals{
+      font-size: 1.8em;
+      font-weight: lighter;
+      font-family: 'Alegreya Sans SC', sans-serif;
+      position: absolute;
+      top: 90%;
+      left: 3%;
+    }
+
+    </style>
+    <title>Home page</title>
+  </head>
+  <body>
+    <form class="" action="index.html" method="get">
+      <div class="header">
+        <ul>
+          <a href="#"><li id="home">HOME</li></a>
+          <a href="file:///C:/Users/Shlok/Desktop/website/upload_page.html"><li id="upload">UPLOAD</li></a>
+          <a href="#"><li>RECORDS</li></a>
+          <a href="file:///C:/Users/Shlok/Desktop/website/profile_page.html"><li id="profile">PROFILE</li></a>
+          <a href="#"><li>LOGOUT</li></a>
+        </ul>
+      </div>
+    </form>
+    <script type="text/javascript">
+      var home_s = document.getElementById("home").selected;
+      var upload_s = document.getElementById("upload").selected;
+      var profile_s = document.getElementById("profile").selected;
+      var  selected = 0;
+      if(home_s){
+        selected=1;
+      }
+      if(upload_s){
+        selected=2;
+      }
+      if(profile_s){
+        selected=3;
+      }
+      $.get("/utility", {optn:selected} )
+    </script>
+    <div class="body">
+      <img src="https://mk0digitallearn7ttjx.kinstacdn.com/wp-content/uploads/2017/04/VIT.jpg" alt="" class="head">
+      <div class="slider">
+      </div>
+      <div class="newsfeed">
+        <div class="">
+          <h2>ON THE AGENDA</h2>
+          <hr class="line">
+        </div>
+        <div class="feed1">
+          <img src="https://www.iitb.ac.in/sites/www.iitb.ac.in/files/styles/large/public/reshigh/2020-12/img9.jpeg?itok=8X-h5_8e" alt="" class="i1">
+          <hr>
+          <a href="https://www.iitb.ac.in/en/research-highlight/boosting-protein-production-cyanobacteria" class="l1">Boosting the protein production in cyanobacteria</a>
+          <p class="t1">Cyanobacteria are a type of unicellular organisms that can utilize sunlight and synthesize their food.Their ability to carry out photosynthesis makes them excellent candidates in the field of biotechnology for the production of desired chemicals...</p>
+        </div>
+        <div class="feed2">
+          <img src="https://www.iitb.ac.in/sites/www.iitb.ac.in/files/styles/large/public/reshigh/2020-12/img8.png?itok=1p3WB6HH" alt="" class="i2">
+          <hr>
+          <a href="https://www.iitb.ac.in/en/research-highlight/addressing-groundwater-crisis-south-india" class="l2">Addressing the groundwater crisis in South India</a>
+          <p class="t2">Researchers from IIT Bombay report increasing dependence on groundwater after frequent droughts as the cause for the alarming decrease in groundwater levels in South India.Last year, in June 2019, the people of Chennai were forced to deal with an alarming fact...</p>
+        </div>
+        <div class="feed3">
+          <img src="https://www.iitb.ac.in/sites/www.iitb.ac.in/files/styles/large/public/reshigh/2020-12/img7.jpeg?itok=dqdK90Aj" alt="" class="i3">
+          <hr>
+          <a href="https://www.iitb.ac.in/en/research-highlight/new-approach-to-understanding-malnutrition-india" class="l3">A new approach to understanding malnutrition in India</a>
+          <p class="t3">Researchers use a new technique to evaluate under-nutrition, micronutrient deficiencies and obesity in children. One of the greatest ironies that exist in India today is found in the food we eat. While the agricultural production was over 285 million tonnes in...</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
