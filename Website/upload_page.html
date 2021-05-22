@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>upload files</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAs5mLwfvqcAnaX0b5Q6VNB-B0SvOiTLEw",
+        authDomain: "sdp-website-e6338.firebaseapp.com",
+        projectId: "sdp-website-e6338",
+        storageBucket: "sdp-website-e6338.appspot.com",
+        messagingSenderId: "650676865532",
+        appId: "1:650676865532:web:53b8a4a4549baeb386ca79"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="main_design.css"> -->
+    <style media="screen">
+    .upload_body{
+      position: absolute;
+      height: 300px;
+      width: 800px;
+      border: 1px dashed black;
+      left: 0;
+      right: 0;
+      top: 25%;
+      bottom: 0;
+      margin: auto;
+      display: flex;
+      /* align-items: center; */
+      /* justify-content: center; */
+    }
+
+    .upload_hover{
+      background-color: grey;
+      border: 1px solid black;
+    }
+
+    .upload_body h3{
+      position: absolute;
+      padding-left: 190px;
+      padding-top: 62px;
+    }
+
+    #image{
+      text-align: center;
+      position: absolute;
+      padding-left: 320px;
+      padding-top: 90px;
+    }
+
+    .upload_header{
+      padding-left: 40px;
+      padding-top: 40px;
+    }
+
+
+
+    .upload_title{
+      float: left;
+      position: absolute;
+      top: 20%;
+
+    }
+
+    .upload_header h2{
+      font-size: 2em;
+      padding-top: 70px;
+      padding-bottom: 20px;
+    }
+
+    .upload_logo{
+      float: right;
+      height: 60px;
+      width: 10%;
+      position: absolute;
+      top: 5%;
+      left: 83%;
+    }
+
+    .upload_logo img{
+      height: 130px;
+    }
+
+    .btn{
+      position: absolute;
+      top: 50%;
+      left: 40%;
+    }
+
+    #image{
+      text-align: center;
+      position: absolute;
+      top: 10%;
+      left: 0%;
+      padding-left: 320px;
+      padding-top: 90px;
+    }
+
+    </style>
+
+  </head>
+  <body>
+    <div class="upload_header">
+        <h2>VISHWAKARMA UNIVERSITY</h2>
+        <hr>
+      <div class="upload_logo">
+        <img src="https://media-exp1.licdn.com/dms/image/C4E0BAQGltV9wRWpIjg/company-logo_200_200/0?e=2159024400&v=beta&t=OvwaqDDv27OO92lXsLYrp9mnv36NaantGosp_dF0OHA" alt="">
+      </div>
+    </div>
+    <div class="upload_body ">
+      <h3>Drag files into the box or browse them in your system.</h3>
+      <form class="" action="/utility" method="POST" enctype="multipart/form-data ">
+        <input type="image" name="image" id="image">
+        <label for="image"></label>
+        <button type="submit" name="button" class="btn">Upload</button>
+      </form>
+    </div>
+    <script type="text/javascript">
+             const upload_body = document.querySelector(".upload_body")
+
+             upload_body.addEventListener("dragover",(e) => {
+               e.preventDefault();
+               upload_body.classList.add("upload_hover");
+             });
+
+             upload_body.addEventListener("dragleave",() => {
+               upload_body.classList.remove("upload_hover");
+             });
+
+             upload_body.addEventListener("drop",(e) => {
+               e.preventDefault();
+               const image = e.dataTransfer.files[0];
+               const type = image.type;
+               console.log(type);
+
+               if(type == "image/png" || type == "image/jpg"  || type == "image/jpeg")
+               {
+                 return upload(image);
+               }
+               else {
+                 upload_body.setAttribute("class","upload_body invalid");
+                 upload_body.innerText ="invalid format";
+                 upload_body.classList.remove("upload_hover");
+                 return false;
+               }
+             });
+
+             const upload = (image) => {
+               upload_body.setAttribute("class","upload_body valid");
+               upload_body.innerText="image added";
+               upload_body.classList.remove("upload_hover");
+             }
+
+
+
+    </script>
+  </body>
+</html>
