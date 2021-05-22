@@ -1,0 +1,232 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.header{
+  width: 100%;
+  height: 30px;
+  display:block;
+  background: #5CDB95;
+  justify-content: center;
+  align-content: center;
+}
+
+.header ul a{
+  justify-content: flex-end;
+  text-align: center;
+  display: inline-block;
+  background-color: #5CDB95;
+  padding-right: 94px;
+  padding-left: 95px;
+  padding-top: 7px;
+  color: white;
+  font-weight: lighter;
+  font-size: 1.0em;
+}
+
+.header li{
+  background-color: #5CDB95;
+  font-weight: bold;
+}
+
+.body{
+  width: 900px;
+  height: 1800px;
+  position: absolute;
+  top: 10%;
+  left: 13%;
+  background: #EDF5E1;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.head{
+  object-fit: cover;
+  height: 200px;
+  width: 1000px;
+  position: absolute;
+  left: 0%;
+}
+
+.slider{
+  width:100%;
+  height: 450px;
+  position: absolute;
+  left: 50%;
+  top: 22%;
+  transform: translate(-50%,-30%);
+  background-image: url('http://www.vit.edu/images/TRF/1.jpeg');
+  background-size: cover;
+  animation:slide 30s infinite ease;
+}
+
+@keyframes slide {
+  0%{background-image: url('http://www.vit.edu/images/TRF/1.jpeg');background-size: cover;}
+  33%{background-image: url('http://www.vit.edu/images/TRF/2.jpeg');background-size: cover;}
+  66%{background-image: url('http://www.vit.edu/images/Technical_chapter/DSC_5395.jpg');background-size: cover;}
+
+}
+
+.newsfeed{
+  font-size: 1.8em;
+  font-weight: lighter;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  position: absolute;
+  top: 42%;
+  left: 3%;
+}
+
+.line{
+  border-top: 2px solid grey;
+  width: 310%;
+}
+
+.feed1{
+  padding-top: 100px;
+  position: absolute;
+  top: 150%;
+  left: 10%;
+  width: 290%;
+  height: 120px;
+  background-color: #379683;
+}
+
+.feed1 hr{
+  padding-left: 350px;
+  width: 50%;
+}
+
+.i1{
+  padding-top: 100px;
+  position: absolute;
+  top: -45.5%;
+  left: 0%;
+  height: 220px;
+  width: 220px;
+}
+
+.l1{
+  color: white;
+  position: absolute;
+  top: 8%;
+  left: 30%;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.l1:hover{
+  font-weight: bold;
+}
+
+.t1{
+  color: white;
+  position: absolute;
+  padding-right: 20px;
+  top: 49%;
+  left: 30%;
+  right: 10%;
+  font-weight: lighter;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.6em;
+}
+
+.feed2{
+  padding-top: 100px;
+  position: absolute;
+  top: 600%;
+  left: 10%;
+  width: 290%;
+  height: 120px;
+  background-color: #379669;
+}
+
+.feed2 hr{
+  padding-left: 350px;
+  width: 50%;
+}
+
+.i2{
+  padding-top: 100px;
+  position: absolute;
+  top: -45.5%;
+  left: 0%;
+  height: 220px;
+  width: 220px;
+}
+
+.l2{
+  color: white;
+  position: absolute;
+  top: 8%;
+  left: 30%;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.l2:hover{
+  font-weight: bold;
+}
+
+.t2{
+  color: white;
+  position: absolute;
+  padding-right: 20px;
+  top: 49%;
+  left: 30%;
+  right: 10%;
+  font-weight: lighter;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.6em;
+}
+
+.feed3{
+  padding-top: 100px;
+  position: absolute;
+  top: 1060%;
+  left: 10%;
+  width: 290%;
+  height: 120px;
+  background-color: #376969;
+}
+
+.feed3 hr{
+  padding-left: 350px;
+  width: 50%;
+}
+
+.i3{
+  padding-top: 100px;
+  position: absolute;
+  top: -45.5%;
+  left: 0%;
+  height: 220px;
+  width: 220px;
+}
+
+.l3{
+  color: white;
+  position: absolute;
+  top: 8%;
+  left: 30%;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.l3:hover{
+  font-weight: bold;
+}
+
+.t3{
+  color: white;
+  position: absolute;
+  padding-right: 20px;
+  top: 49%;
+  left: 30%;
+  right: 10%;
+  font-weight: lighter;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.6em;
+}
